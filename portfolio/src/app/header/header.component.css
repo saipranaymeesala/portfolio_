@@ -38,7 +38,7 @@ nav {
   background-color: rgb(250, 232, 240);
 }
 
-.nav-links {
+.nav-links { 
   gap: 2rem;
   list-style: none;
   font-size: 1.5rem;
