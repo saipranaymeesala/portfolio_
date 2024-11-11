@@ -2,7 +2,7 @@
     <div class="logo">Meesala Sai Pranay</div>
     <div>
       <ul class="nav-links">
-        <li><a href="about" class="text-dark">About</a></li>
+        <li><a routerLink="/About" class="text-dark">About</a></li>
         <li><a href="#resume"  class="text-dark" onclick="window.open('assets/Resume_.pdf')">Resume</a></li>
         <li><a href="#projects"  class="text-dark" onclick="window.open('assets/password_authentication_system.pdf')">Publications</a></li>
         <li><a routerLink="/contact"  class=" btn text-bg-dark p-2 rounded-5">Contact</a></li>
@@ -20,11 +20,11 @@
         <span></span>
       </div>
       <div class="menu-links" #menuRef>
-        <li><a href="#about" (click)="toggleMenu()">About</a></li>
-        <li><a href="#skills" (click)="toggleMenu()">Skills</a></li>
+        <li><a routerLink="/About" (click)="toggleMenu()" >About</a></li>
+        
         <li><a href="#resume" (click)="toggleMenu()" onclick="window.open('assets/Resume_.pdf')">Resume</a></li>
-        <li><a href="#projects" (click)="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" (click)="toggleMenu()">Contact</a></li>
+        <li><a href="#projects" (click)="toggleMenu()" onclick="window.open('assets/password_authentication_system.pdf')">Publications</a></li>
+        <li><a routerLink="/contact" (click)="toggleMenu()">Contact</a></li>
       </div>
     </div>
   </nav>
